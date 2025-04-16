@@ -1,0 +1,276 @@
+:root{
+  --royal-blue-light: #387dff;
+  --royal-blue-dark: #0059ff;
+  --white: #fff;
+  --backgroud: #e2e3e9;
+}
+
+section{
+  height: 100vh;
+  text-align: center;
+}
+
+/* Section 1 */
+.section1-div {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: space-between;
+  padding: 40px;
+  max-width: 1200px;
+  margin-left: 22%;
+}
+
+.text-content {
+  max-width: 50%;
+}
+
+.text-content h1 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  font-weight: bold;
+
+  border-top: solid var(--royal-blue-light);
+
+  
+}
+
+.text-content p {
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.text-content button{
+  margin-top: 30px;
+  width: 200px;
+  height: 65px;
+  font-size: 25px;
+  background-color: var(--royal-blue-dark);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.text-content button:hover{
+  box-shadow: 0px 0px 23px var(--royal-blue-dark);
+  transform: scale(1.05);
+}
+
+.imagem1 {
+  max-width: 45%;
+  margin-top: 25vh;
+  height: auto;
+  animation: flutuar 2s ease-in-out infinite alternate;
+  border-radius: 2rem;
+  box-shadow: 0 0 23px var(--royal-blue-dark)
+}
+
+@media (max-width: 768px) {
+  .section1-div {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content,
+  .imagem1 {
+    max-width: 100%;
+  }
+}
+
+
+/* Section 1 */
+
+/* Section 2  */
+
+.section2-div{
+  margin-top: 60vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
+
+  
+  border-bottom: 5px solid #ff0000;
+}
+
+.section2-h1 {
+  color: #ff0000;
+  font-size: 36px;
+  margin-bottom: 5vh;
+}
+
+.section2-ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.section2-ul li {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 8px solid #ff0000;
+  font-size: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+
+  transition: 0.7s ease-in;
+}
+
+.section2-ul li:hover{
+  background-color: #ff0000;
+  color: #fff;
+  border-left-color: #fff;
+}
+
+/* Section 2 */
+
+/* Section 3 */
+
+.section3-div{
+  margin-left: 5vh;
+  margin-right: 5vh;
+
+  
+  border-bottom: 5px solid #003cff;
+}
+
+.section3-h1 {
+  color: var(--royal-blue-dark);
+  font-size: 36px;
+  margin-bottom: 5vh;
+}
+
+.section3-ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.section3-ul li {
+  cursor: pointer;
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 8px solid #003cff;
+  font-size: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+
+  transition: 0.7s ease-in;
+}
+
+.section3-ul li:hover{
+  background-color: var(--royal-blue-dark);
+  color: #fff;
+  border-left-color: #fff;
+}
+
+/* Section 3 */
+
+/* Section 4 */
+
+.section4-div {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: space-between;
+  padding: 40px;
+  max-width: 1200px;
+  margin-left: 22%;
+  margin-bottom: 100vh;
+}
+
+.text-content4 {
+  max-width: 50%;
+}
+
+.text-content4 h1 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  font-weight: bold;
+
+  border-top: solid var(--royal-blue-light);
+
+  
+}
+
+.text-content4 p {
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.text-content4 button{
+  margin-top: 30px;
+  width: 200px;
+  height: 65px;
+  font-size: 25px;
+  background-color: var(--royal-blue-dark);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.text-content4 button:hover{
+  box-shadow: 0px 0px 23px var(--royal-blue-dark);
+  transform: scale(1.05);
+}
+
+.imagem4 {
+  width: 450px;
+  margin-top: 25vh;
+  height: auto;
+  animation: flutuar 2s ease-in-out infinite alternate;
+  border-radius: 2rem;
+  box-shadow: 0 0 23px var(--royal-blue-dark)
+}
+
+@media (max-width: 768px) {
+  .section1-div {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content,
+  .imagem1 {
+    max-width: 100%;
+  }
+}
+
+/* Section 4 */
+
+#sti{
+  background: linear-gradient(90deg, var(--royal-blue-dark) 0%, var(--royal-blue-light) 100%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}
+
+.section5-div {
+  max-width: 800px;
+  margin-top: 30vh;
+}
+
+#sti h1 {
+  color: var(--white); /* laranja da imagem */
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+#sti p {
+  font-size: 23px;
+  color: white;
+  margin-bottom: 17rem;
+  line-height: 1.6;
+
+}

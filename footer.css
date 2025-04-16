@@ -1,0 +1,40 @@
+.flex{
+    display: flex;
+}
+
+footer {
+    padding: 60px 4%;
+    background-color: rgb(12, 12, 116);
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+
+}
+
+.borda{
+    border-top: 2px solid var(--royal-blue-light);
+}
+
+.borda i{
+    color: #fff;
+}
+
+footer .line-footer p i{
+
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: #fff;
+}
+
+.btn-social a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 0.4s;
+}
