@@ -30,7 +30,7 @@ a{
     background-color: var(--royal-blue-dark);
     
 
-    height: 4.675rem;
+    height: 4.6875rem;
     width: 100%;
 
     padding: 1rem;
@@ -50,7 +50,7 @@ a{
     display: flex;
     gap: 0.5rem;
     z-index: 1;
-    margin-top: -4.675rem;
+    margin-top: -4.6875rem;
 }
 
 .menu a{
@@ -93,15 +93,17 @@ i{
         z-index: 1;
         visibility: hidden;
         overflow-y: hidden;
-        transition: 0.3s;
+        transition: 0.6s;
+
     }
 
     .menu a{
-        padding: 1rem 0;
+        padding: 1rem;
         margin-inline: 1rem;
         border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
-        font-weight: 300;
+        font-weight: 600;
         border: 5px solid #387dff;
+        transition: 0.6s;
     }
 
     .menu a:hover{
@@ -137,7 +139,7 @@ i{
         background: currentColor;
         margin-top: 0.3125rem;
         position: relative;
-        transition: .3s;
+        transition: .5s;
     }
 
     .checkbox:checked ~ .menu{
