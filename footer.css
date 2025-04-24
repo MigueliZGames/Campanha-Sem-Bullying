@@ -33,8 +33,13 @@ footer .line-footer p a{
     color: #fff;
 }
 
+.feito-por{
+    color: #fff;
+}
+
 .btn-social a{
     font-size: 1.5rem;
     font-weight: bold;
     transition: 0.4s;
 }
+

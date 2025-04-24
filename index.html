@@ -23,22 +23,23 @@
  </head>
  
  <body>
-     <header class="header">
-         <a href="index.html" class="logo">Campanha Sem Bullying🚫</a>
- 
-         <nav class="nav">
- 
-             <input type="checkbox" class="checkbox" id="checkbox" />
-             <label for="checkbox" class="label-menu">Menu<span class="hamburger"></span></label>
- 
-             <ul class="menu">
-                 <li class="item-menu"><a href="#oqe">O que é?</a></li>
-                 <li class="item-menu"><a href="#oqg">O que Gera?</a></li>
-                 <li class="item-menu"><a href="#ce">Como Evitar?</a></li>
-                 <li class="item-menu"><a href="#sti">Somos todos iguais.</a></li>
-             </ul>
-         </nav>
-     </header>
+    <header class="header">
+        <a href="index.html" class="logo">Campanha Sem Bullying🚫</a>
+    
+        <nav class="nav">
+    
+          <input type="checkbox" class="checkbox" id="checkbox" />
+          <label for="checkbox" class="label-menu">Menu<span class="hamburger"></span></label>
+    
+          <ul class="menu">
+            <li class="item-menu"><a href="#oqe" class="active">O Que é?</a></li>
+            <li class="item-menu"><a href="#oqg">O Que Gera?</a></li>
+            <li class="item-menu"><a href="#ce">Como Evitar?</a></li>
+            <li class="item-menu"><a href="#sti">Somos Todos Iguais</a></li>
+          </ul>
+        </nav>
+      </header>
+    
  
      <main>
          <section id="oqe">
@@ -79,10 +80,14 @@
                </ul>
              </div>
 
-             
+         <br>
          </section>
+
          <a href="formulario.html" class="form-button">Estou Sofrendo Bullying</a>
- 
+         <br>
+
+         
+         <br><br><br><br>
  
          <section id="ce">
  
@@ -119,6 +124,9 @@
                      <div class="btn-social">
                          <a href="">Campanha sem Bullying🚫</a>
                      </div>
+                     <div class="feito-por">
+                      <p><b>Feito por Miguel Bonifácio</b></p>
+                     </div>
              </div>
          </div>
              <div class="line-footer borda">
@@ -130,6 +138,45 @@
      </footer>
      
  
+     <script>
+        document.querySelectorAll('.menu a').forEach(link => {
+          link.addEventListener('click', () => {
+            const checkbox = document.getElementById('checkbox');
+            if (checkbox.checked) {
+              checkbox.checked = false;
+            }
+          });
+        });
+      </script>
+      
+
+      <script>
+        const sections = document.querySelectorAll('section[id]');
+        const menuLinks = document.querySelectorAll('.menu a');
+      
+        window.addEventListener('scroll', () => {
+          let current = '';
+      
+          sections.forEach(section => {
+            const sectionTop = section.offsetTop - 120; // margem maior para garantir o cálculo
+            if (pageYOffset >= sectionTop) {
+              current = section.getAttribute('id');
+            }
+          });
+      
+          menuLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+              link.classList.add('active');
+            }
+          });
+        });
+      
+        // Ativa o item correto ao carregar a página
+        window.dispatchEvent(new Event('scroll'));
+      </script>
+      
+    
  </body>
  
  </html>

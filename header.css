@@ -67,6 +67,10 @@ a{
     background: var(--royal-blue-light);
 }
 
+.menu a.active{
+    background: var(--royal-blue-light);
+}
+
 .label-menu, .checkbox{
     display: none;
 }
@@ -109,6 +113,10 @@ i{
     .menu a:hover{
         background: var(--royal-blue-dark);
         border-radius: .5rem;
+    }
+
+    .menu a.active{
+        background: var(--royal-blue-dark);
     }
 
     .label-menu{

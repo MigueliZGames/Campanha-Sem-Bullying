@@ -67,10 +67,11 @@
     box-shadow: 0 0 23px var(--royal-blue-dark)
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 1170px) {
     .section1-div {
       flex-direction: column;
       text-align: center;
+      margin-left: 1%;
     }
   
     .text-content,
@@ -138,7 +139,7 @@
     margin-left: 5vh;
     margin-right: 5vh;
 
-    margin-top: 5vh;
+    margin-top: 0vh;
   
     
     border-bottom: 5px solid #003cff;
@@ -180,6 +181,7 @@
   
   /* Section 4 */
   
+
   .section4-div {
 
     display: flex;
@@ -263,7 +265,7 @@
   
   #sti{
     background: linear-gradient(90deg, var(--royal-blue-dark) 0%, var(--royal-blue-light) 100%);
-    height: 100vh;
+    height: 200vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -292,7 +294,7 @@
   } 
 /* formulario button */
 .form-button {
-    margin-top: 20px;
+
     padding: 12px;
     width: 100%;
     cursor: pointer;
@@ -305,7 +307,7 @@
     font-size: 20px;
     font-weight: 600;
 
-    margin-left: 40%;
+    margin-left: 42.5%;
 
 
   }
@@ -316,7 +318,14 @@
   
 
   @media (max-width: 1170px) {
+
     .form-button{
       margin-left: 30%;
+    }
+  }
+  @media (max-width: 1370px) {
+
+    .form-button{
+      margin-left: 40%;
     }
   }
